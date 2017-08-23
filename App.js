@@ -1,15 +1,52 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator, ListView, TabNavigator, StackNavigator} from 'react-native';
 
 export default class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: true
+    }
+  }
+
+  componentDidMount() {
+    return fetch('https://newsapi.org/v1/articles?source=hacker-news&sortBy=latest&apiKey=5fc296ae756749138462a705f85cd805')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        this.setState({
+          isLoading: false,
+          dataSource: responseJson.articles,
+        }, function() {
+        });
+      })
+      .catch((error) => {
+        console.log('ERROR:');
+        console.error(error);
+      });
+  }
+
   render() {
+    if (this.state.isLoading) {
+      return (
+        <View style={{flex: 1, paddingTop: 20}}>
+          <ActivityIndicator />
+        </View>
+      );
+    }
+
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        { this.state.dataSource.map((article) => (
+          <View key={article.publishedAt}>
+            <Text>Title: {article.title}</Text>
+            <Text>Author: {article.author}</Text>
+            <Text>Description: {article.description}</Text>
+            <Text>Url: {article.url}</Text>
+          </View>
+        ))}
       </View>
-    );
+    )
   }
 }
 
