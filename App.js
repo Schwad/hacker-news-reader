@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ActivityIndicator, ListView, TabNavigator, StackNavigator} from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, ActivityIndicator, ListView, TabNavigator, StackNavigator} from 'react-native';
 
 export default class App extends React.Component {
 
@@ -58,3 +58,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+AppRegistry.registerComponent('HackerNewsReader', () => App);
