@@ -1,4 +1,7 @@
 {
   "name": "HackerNewsReader",
-  "displayName": "HackerNewsReader"
+  "displayName": "HackerNewsReader",
+  "expo": {
+  "sdkVersion": "18.0.0"
+ }
 }
