@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppRegistry, StyleSheet, Text, View, ActivityIndicator, ListView, TabNavigator, StackNavigator} from 'react-native';
+import { AppRegistry, Linking, StyleSheet, ScrollView, Text, View, ActivityIndicator, ListView, TabNavigator, StackNavigator} from 'react-native';
 
 export default class App extends React.Component {
 
@@ -36,26 +36,58 @@ export default class App extends React.Component {
     }
 
     return (
-      <View style={styles.container}>
-        { this.state.dataSource.map((article) => (
-          <View key={article.publishedAt}>
-            <Text>Title: {article.title}</Text>
-            <Text>Author: {article.author}</Text>
-            <Text>Description: {article.description}</Text>
-            <Text>Url: {article.url}</Text>
-          </View>
-        ))}
-      </View>
+      <ScrollView contentContainerStyle={styles.contentContainer}>
+        <View>
+          <Text style={styles.headline}>HackerNewsReader</Text>
+        </View>
+        <View>
+          { this.state.dataSource.map((article) => (
+            <View key={article.publishedAt} style={styles.article}>
+                <Text style={styles.title} onPress={() => Linking.openURL(article.url)}>{article.title}</Text>
+                <Text style={styles.author}> {article.author} </Text>
+                <Text style={styles.description}>{article.description}</Text>
+            </View>
+          ))}
+        </View>
+      </ScrollView>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  contentContainer: {
+    // paddingVertical: 20,
+    borderTopWidth: 20,
+    borderTopColor: 'orange',
+    // flex: 1,
+    flexDirection: 'column',
+    // backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'flex-start',
+    // height: '100%'
+  },
+  headline: {
+    fontSize: 19,
+    fontWeight: 'bold',
+    backgroundColor: 'orange',
+    color: 'white',
+  },
+  description: {
+    marginLeft: 8,
+  },
+  author: {
+    fontStyle: 'italic',
+    marginLeft: 5,
+  },
+  title: {
+    fontSize: 19,
+    fontWeight: 'bold',
+    marginLeft: 8,
+  },
+  article: {
+    marginTop: 12,
+    // marginLeft: 8,
+    width: '95%',
   },
 });
 
