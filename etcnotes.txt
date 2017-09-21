@@ -1,0 +1,84 @@
+1. Introductions
+
+.quarterly events (round the solstice time)
+.now a community interest company. Money goes in to support company and mission
+.iotec main sponsor
+.someone who likes freelancers? (ben is the name).
+
+2. Julian Summerhayes
+
+.visage
+.fade to gray
+^^^music he likes
+
+.read seth godin
+.he doesn't read off slides! Good!
+.interesting thought here. are we working like a professional or an amateur
+.interesting observation about being glued to your phones. we need to be disciplined about how we do it. 
+.social networking apps feed 'resistance'. feed the part of your body that wants to avoid doing the difficult work
+. 'deep work' kyle newport. it's important to focus on 'deep work' not 'shallow work'. We should be doing that as well as creating art.
+. This isn't about pleasing our boss this is about doing it for ourselves.
+. 'leo baubarter' 'zen habits blog'
+. Write down 3 most important things to get done today. If you do more great but just focus on that. To do lists are a joke
+. Time blocking. Block off time where you focus on one thing at a time. Between hrs x-y you do your best work.
+. keep browser tabs down.
+. finish what you start. 'all these open loops just feed resistance'
+. coming away from social media he has not missed out on anything.
+. with timeblocking we don't know 'when to turn off' and it's just as important to listen to your body rhythm
+. no, does not do meditation or spirituality. all his thinking time is walking two dogs.
+. for him he tries to have a period of his day where he doesn't do anything.
+
+3. craig mcneile
+
+. lecturer at plym
+.8000 cores, data sets are 20 Tbytes
+. Written in C & C++, R, Python
+. Big calculation from scratch is 5 years
+. efficiency of code is REALLY important
+. efficiency of 38% of peak performance has been done
+. parallel system 250 terabytes
+-> why not cloud?
+. always cheaper to run on own clusters as opposed to Azure or AWS
+. using openstack etc
+. clusters called 'dirac'
+. goal: discover what 95% of the universe is (dark matter/energy)
+
+
+4. Lorna dallas
+
+.engineer at babcock and chairs; women in stem plymouth
+.increase gender equality in stem
+
+
+
+5.  Paul Wright CEO Iotec
+
+. came down from london just to have this talk
+. 'disrupting big business'
+. if you're living and breathing what you're doing don't get too distracted or ahead of yourself. some companies start with a clear focus, come along to a distracting focus and struggle.
+. be sure to get the tech right. i.e. BSB bought their own satellites for 600 million. Sky decided to use 6th-7th gen tech (much cheaper, more reliable). Used current satellite in the system.
+. no matter what you do though, it won't be perfect and you will need iterations
+.
+
+6. Kate Pasterfield (sponge) mobile VR in the Workplace
+
+.I think this is the group from the book andre gave me. 
+.spongeuk.com/vr
+
+.didn't use daydream, used 20 pound headset like a cardboard. 
+ --> Sponge *are* recruiting
+
+7. Merika Kindlon (commercial executive of Plymouth Science park)
+
+. PSP up by derriford. Joint between council and uni
+. job growth
+. businesses must be in science or tech sector
+. 150 companies all shapes/science. Went over 1000th employee on park.
+. 180-200k square feet o' space. 2-3 units left
+
+8. Shaun Aptus Digital IT recruiting plymouth
+
+. Possibility for my 20h?
+avg current salary > 32 45k
+. those who remain loyal to their employers earn less.
+.  

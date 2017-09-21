@@ -41,7 +41,7 @@ export default class App extends React.Component {
           <Text style={styles.headline}>Breaking Tech News.</Text>
         </View>
         { this.state.dataSource.map((article) => (
-          <View style={article.is_new == true ? styles.new_article : styles.article}>
+          <View key={article.id} style={article.is_new == true ? styles.new_article : styles.article}>
             <View>
               <Image
                 source={IMAGES[article.originplace]}
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   headline: {
-    fontSize: 19,
+    fontSize: 22,
     fontWeight: 'bold',
     backgroundColor: '#FF6600',
     color: 'black',
